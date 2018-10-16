@@ -1,0 +1,132 @@
+/*userBlock*/
+.userBlock{
+	padding:20px;
+}
+.userBlock>div{
+	padding:20px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.operate{
+	height: 40px;
+	margin-bottom: 10px;
+}
+.userMsg::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.userMsg>div{
+	padding:0 20px;
+}
+.noviewable{
+	display: none;
+}
+.userMsg div div.row{
+	height:260px;
+	margin-bottom: 25px;
+	box-shadow:0 0 5px gray;
+}
+.userMsg .photo{
+	height: 100px;
+	border:none;
+	padding:0 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userMsg .photo img{
+	margin-top:10px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.userMsg .describe table{
+	table-layout:fixed;
+}
+.userMsg .describe table td{
+	border:none;
+}
+.userMsg .describe table td{
+	padding:2px 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+
+
+/*状态按钮*/
+.state{
+	width:60px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 40px;
+	position: relative;
+	cursor:pointer;
+}
+.state span{
+	font-size: 12px;
+	color:#fff;
+}
+
+.closeState{
+	background-color:rgba(204, 204, 204);
+}
+.closeState span{
+	padding-left: 23px;
+}
+.openState{
+	background-color: rgba(104, 184, 40);
+}
+.openState span{
+	padding-left:5px;
+}
+.circle{
+	position: absolute;
+	top:2px;
+	left:2px;
+	display: block;
+	width:20px;
+	height: 20px;
+	border-radius:50%;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+.slide{
+	left: 40px;
+}
+
+/*头像按钮*/
+td.photoTd{
+	text-align: center;
+}
+button.changePhoto{
+	width: 120px;
+	border-radius: 20px;
+	background:linear-gradient(#A6E228,#E3CB29);
+	border: none;
+}
+input.file{
+	display: none;
+}
+
+/*userBlock模态框*/
+div.usermodal{
+   width:300px;
+   left:auto;
+}
+div.usermodal div.modal-content{
+	height: 500px;
+}
+div.usermodal table{
+	table-layout: fixed;
+}
+div.usermodal td{
+	padding:5px;
+}
+div.usermodal tr td:first-child{
+   width:70px;
+}
+div.usermodal input{
+	border-color:#333;
+}

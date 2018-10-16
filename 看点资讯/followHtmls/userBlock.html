@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>看点资讯-用户管理</title>
+	<script src = "../js/jquery-2.1.4/jquery.min.js"></script>
+	<script src = "../css/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/iconFont/iconfont.css">
+	<link rel="stylesheet" href="../css/indexStyle.css">
+	<link rel="stylesheet" href="../css/userStyle.css">
+</head>
+<body>
+	<div class="container mainBody">
+		<div class="row">
+			<!-- 左侧 -->
+			<div class="col-md-2 col-xs-2 leftNav visible-lg">
+				<div class="row logo">
+				  <img src="../images/logo.png" alt="图">
+				  看点资讯
+			    </div>
+			     <div class="row nav">
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="icon-shouye iconfont"></i>
+			    		</div>
+                        <div class="col-xs-10">
+                        	<a href="../index.html">首页<i class="iconfont icon-kuozhan"></i></a>
+                        </div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-liebiao"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./itemBlock.html">栏目管理<i class="iconfont icon-kuozhan"></i></a>
+			    			
+			    		</div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-zixun"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./consultBlock.html">资讯管理<i class="iconfont icon-kuozhan"></i></a>
+			    		</div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-ai-user"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./userBlock.html">用户管理<i class="iconfont icon-kuozhan"></i>
+			    			</a>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- 右侧 -->
+			<div class="col-lg-10 col-md-12 col-xs-12">
+				<!-- 右侧上方信息提示栏 -->
+				<div class="row topMsg">
+					<div class="col-md-2 col-xs-2">
+						<i class="iconfont icon-liebiao1"></i>
+						<i class="iconfont icon-laba"><p>4</p></i>
+
+					</div>
+					<div class="col-md-2 col-xs-2 col-xs-offset-7">
+						<img src="../images/touxiang.png" alt="图">
+						<span>用户名</span>
+					</div>
+				</div>
+				<!-- 上方隐藏导航栏 -->
+				<div class="row visible-md visible-xs visible-sm topHideNav">
+				   <ul>
+				      <li class="col-md-2">
+				      	<a href="../index.html">首页</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="#">栏目管理</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="./consultBlock.html">资讯管理</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="./userBlock.html">用户管理</a>
+				      </li>
+				   </ul>
+			    </div>
+			    <!-- 右侧下方信息呈现模块 -->
+				<div class="row rightBody">
+					<div class="userBlock col-md-12 col-xs-12 blockActive">
+						<div>
+						 	<div class="operate">
+						 		<button class="btn btn-success" data-toggle="modal" data-target="#usermodal">新增</button>
+						 		<button class="btn btn-warning">查询</button>
+						 		<input type="text" placeholder="请输入用户名">
+						 	</div>
+						 	<div class="modal usermodal fade" id="usermodal" role="dialog" aria-labelledby="myModalLabel">
+						 		<!-- <div class="modal-dialog"> -->
+							 		<div class="modal-content">
+								 		<div class="modal-header">
+								 			添加数据
+								 			<span class="close">&times;</span>
+								 		</div>
+								 		<div class="modal-body">
+								 			<table>
+								 				<tr>
+								 					<td>用户名</td>
+								 					<td><input type="text" class="nameValue" placeholder="非空"></td>
+								 				</tr>
+								 				<tr>
+								 					<td>密码</td>
+								 					<td><input type="password" class="passValue" placeholder="字母或数字"></td>
+								 				</tr>
+								 				<tr>
+								 					<td>重复密码</td>
+								 					<td><input type="password" class="repassVal"></td>
+								 				</tr>
+								 				<tr>
+								 					<td>真实姓名</td>
+								 					<td><input type="text" class="nickValue" placeholder="汉字"></td>
+								 				</tr>
+								 				<tr>
+								 					<td>email</td>
+								 					<td><input type="text" class="emailValue" placeholder="email格式"></td>
+								 				</tr>
+								 			</table>
+								 		</div>
+								 		<div class="modal-footer">
+								 			<button class="clozz btn btn-danger">关闭</button>
+								 			<button class="add btn btn-success" disabled="true">确认添加</button>
+								 		</div>
+							 		</div>
+						 		<!-- </div> -->
+						 	</div>
+						 	<div class="userMsg">
+						 		<div class="col-xs-4 cloneForm noviewable">
+						 			<div class="row">
+						 			   <div class="col-xs-6 col-xs-offset-3 photo thumbnail">
+						 			    	<img src="../images/user.png" alt="图">
+						 			   </div>
+						 			   <div class="describe col-xs-12">
+						 			   	<table class="table">
+						 			   		<colgroup>
+						 			   			<col span ="1" width="80px">
+						 			   			<col span ="1" width="160px">
+						 			   		</colgroup>
+						 			   		<tr>
+						 			   			<td>用户名</td>
+						 			   			<td class="username"></td>
+						 			   		</tr>
+						 			   		<tr>
+						 			   			<td>真实姓名</td>
+						 			   			<td class="nickname"></td>
+						 			   		</tr>
+						 			   		<tr>
+						 			   			<td>email</td>
+						 			   			<td class="email"></td>
+						 			   		</tr>
+						 			   		<tr>
+						 			   			<td>状态</td>
+						 			   			<td>
+						 			   				<div class="state closeState">
+						 			   					<span>关闭</span>
+						 			   					<i class="circle"></i>
+						 			   				</div>
+						 			   			</td>
+						 			   		</tr>
+						 			   		<tr>
+						 			   			<td colspan="2" class="photoTd">
+						 			   				<button class="changePhoto">换头像</button>
+						 			   				<input type="file" class="file">
+						 			   			</td>
+						 			   		</tr>
+						 			   	</table>
+						 			   </div>
+						 			</div>
+						 		</div>
+						 	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/moveableSwitch.js"></script>
+	<script src="../js/userData.js"></script>
+</body>
+</html>

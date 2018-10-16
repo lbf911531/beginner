@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+	<script type="text/javascript" src="./js/jquery-2.1.4/jquery.min.js"></script>
+	<!-- 图标 -->
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<!-- 滚动条插件 -->
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 自定义样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/icon/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="./css/qqMusicStyle.css">
+	<script type="text/javascript" src="./js/player.js"></script>
+	<script type="text/javascript" src="./js/progress.js"></script>
+	<script type="text/javascript" src="./js/voice.js"></script>
+	<script type="text/javascript" src="./js/initIndex.js"></script>
+</head>
+<body>
+	<div class="header">
+		<!-- 头部左侧logo -->
+		<div class="logo">
+			<a href="javascript:;"></a>
+		</div>
+		<!-- 头部右侧按钮 -->
+		<div class="btnBox">
+			<ul>
+				<li>
+					<a href="javascript:;">登录</a>
+				</li>
+				<li>
+					<a href="javascript:;">设置</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 默认模式 -->
+	<div class="body">
+		<div class="bodyContent">
+			<!-- 中间内容左侧部分 -->
+			<div class="contentLeft">
+				<!-- 左侧上部操作按钮 -->
+				<div class="topBtn">
+					<ul>
+						<li>
+							<i class="iconfont icon-shoucang1"></i>收藏
+						</li>
+						<li>
+							<i class="iconfont icon-tianjia"></i>添加到
+						</li>
+						<li>
+							<i class="iconfont icon-unie122"></i>下载
+						</li>
+						<li>
+							<i class="iconfont icon-shanchu"></i>删除
+						</li>
+						<li>
+							<i class="iconfont icon-qingchu"></i>清空列表
+						</li>
+					</ul>
+				</div>
+				<!-- 左侧主体歌曲库 -->
+				<div class="musicHouse" data-mcs-theme="minimal-dark">
+					<ul>
+						<li class="listTheme">
+							<div class="listCheck">
+								<i class="overCheck"></i>
+							</div>
+							<div class="listMusicNo"></div>
+							<div class="listMusicName">歌曲</div>
+							<div class="listMusicSinger">歌手</div>
+							<div class="listMusicTime">时长</div>
+						</li>
+						<li class="listTheme noviewable">
+							<div class="listCheck">
+								<i></i>
+							</div>
+							<div class="listMusicNo">
+								<span></span>
+							</div>
+							<div class="listMusicName">
+							    <span></span>
+                                <div class="listMenu">
+                                	<a href="javascript:;" title="播放" class="stop"></a>
+                                	<a href="javascript:;" title="添加"></a>
+                                	<a href="javascript:;" title="下载"></a>
+                                	<a href="javascript:;" title="分享"></a>
+                                </div>
+							</div>
+							<div class="listMusicSinger"></div>
+							<div class="listMusicTime">
+                                 <span></span>
+                                 <a href="javascript:;" title="删除"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 中间内容右侧部分 -->
+			<div class="contentRigh">
+				<div class="sangMsg">
+					<div class="img">
+						<img src="./images/0.png">
+					</div>
+					<p class="sangName">
+						<span>歌曲名:</span>
+						<a href="javascrip:;"></a>
+					</p>
+					<p class="singer">
+						<span>歌手名:</span>
+						<a href="javascrip:;"></a>
+					</p>
+					<p class="sangAlbum">
+						<span>专辑名:</span>
+						<a href="javascrip:;"></a>
+					</p>
+				</div>
+				<div class="sangLyrics">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 纯净模式 -->
+	<div class="bodyEctype">
+	</div>
+	<div class="footer">
+		<div class="footContent">
+			<a href="javascript:;" class="btnPre"></a>
+			<a href="javascript:;" class="btnPlay"></a>
+			<a href="javascript:;" class="btnNext"></a>
+			<div class="progressBox">
+				<div class="progressBar">
+					<div class="playMusic">
+						<a href="javascript:;">歌曲名</a> - <a href="javascript:;">歌手名</a>
+				    </div>
+					<div class="playTime">时长 / 总时长</div>
+				</div>
+				<div class="playBar">
+					<div>
+						<div class="playLoad"></div>
+						<div class="playOver">
+							<i class="playDot"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:;" class="btnMod btnMod4"></a>
+			<a href="javascript:;" class="btnLove"></a>
+			<a href="javascript:;" class="btnDown"></a>
+			<a href="javascript:;" class="btnInfo">
+				<span>999</span>
+			</a>
+			<a href="javascript:;" class="btnChange open" title="打开纯净模式"></a>
+			<div class="voiceBox">
+				<a href="javascript:;" class="btnVoice voiceOn"></a>
+				<div class="voiceBar">
+					<div class="voiceOver">s
+						<i class="voiceDot"></i>
+					</div>
+				</div>
+				<span>60%</span>
+			</div>
+		</div>
+	</div>
+	<div class="mark"></div>
+	<audio src=""></audio>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>看点资讯-栏目管理</title>
+	<script src = "../js/jquery-2.1.4/jquery.min.js"></script>
+	<script src = "../css/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap-3.3.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/iconFont/iconfont.css">
+	<link rel="stylesheet" href="../css/indexStyle.css">
+	<link rel="stylesheet" href="../css/itemStyle.css">
+	<script src = "../js/itemData.js"></script>
+</head>
+<body>
+	<div class="container mainBody">
+		<div class="row">
+			<!-- 左侧 -->
+			<div class="col-md-2 col-xs-2 leftNav visible-lg">
+				<div class="row logo">
+				  <img src="../images/logo.png" alt="图">
+				  看点资讯
+			    </div>
+			     <div class="row nav">
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="icon-shouye iconfont"></i>
+			    		</div>
+                        <div class="col-xs-10">
+                        	<a href="../index.html">首页<i class="iconfont icon-kuozhan"></i></a>
+                        </div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-liebiao"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./itemBlock.html">栏目管理<i class="iconfont icon-kuozhan"></i></a>
+			    			
+			    		</div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-zixun"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./consultBlock.html">资讯管理<i class="iconfont icon-kuozhan"></i></a>
+			    		</div>
+			    	</div>
+			    	<div>
+			    		<div class="col-xs-2">
+			    			<i class="iconfont icon-ai-user"></i>
+			    		</div>
+			    		<div class="col-xs-10">
+			    			<a href="./userBlock.html">用户管理<i class="iconfont icon-kuozhan"></i>
+			    			</a>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- 右侧 -->
+			<div class="col-lg-10 col-md-12 col-xs-12">
+				<!-- 右侧上方信息提示栏 -->
+				<div class="row topMsg">
+					<div class="col-md-2 col-xs-2">
+						<i class="iconfont icon-liebiao1"></i>
+						<i class="iconfont icon-laba"><p>4</p></i>
+					</div>
+					<div class="col-md-2 col-xs-2 col-xs-offset-7">
+						<img src="../images/touxiang.png" alt="图">
+						<span>用户名</span>
+					</div>
+				</div>
+				<!-- 上方隐藏导航栏 -->
+				<div class="row visible-md visible-xs visible-sm topHideNav">
+				   <ul>
+				      <li class="col-md-2">
+				      	<a href="../index.html">首页</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="#">栏目管理</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="./consultBlock.html">资讯管理</a>
+				      </li>
+				      <li class="col-md-2">
+				      	<a href="./userBlock.html">用户管理</a>
+				      </li>
+				   </ul>
+			    </div>
+			    <!-- 右侧下方信息呈现模块 -->
+				<div class="row rightBody">
+					<div class="itemBlock col-md-12 col-xs-12 blockActive">
+						<div>
+							<button class="btn btn-success" data-target="#itemAddModal" data-toggle="modal">新增</button>
+							<button class="btn btn-warning delAll" data-target="#delAllModal" data-toggle="modal">批量删除</button>
+                            <button class="allChecked btn btn-danger">
+                            	一键全选
+                            </button>
+                            <button class="reduceChecked btn btn-danger">
+                            	取消全选
+                            </button>
+                            <!-- add模态框 -->
+                             <div class="modal bottom fade" id="itemAddModal">
+                             	<div class="modal-content">
+                             		<div class="modal-header">
+                             		  请添加栏目信息
+                             		  <span class="close">&times;</span>
+                             	    </div>
+                             	    <div class="modal-body">
+	                             		<p>栏目名称</p>
+	                             		<input type="text">
+	                             		<span></span>
+	                             		<p>父栏目</p>
+	                             		<select name="parentItem">
+	                             			<option value="无">无</option>
+	                             		</select>	
+	                             		<p>描述</p>
+	                             		<input type="text">
+	                             		<span></span>
+                             	    </div>
+	                                <div class="modal-footer">
+	                                	<button class="btn btn-success">新增</button>
+	                                	<button class="btn btn-danger">取消</button>
+	                                </div>
+                             	</div>
+                             </div>
+                            <!-- over -->
+                            <!-- delAll模态框 -->
+                            <div class="modal fade del" id ="delAllModal">
+                            	<div class="modal-content">
+                            		<div class="modal-header">
+                            			提示！！！
+                                       <span class="close">&times;</span>
+                            	    </div>
+                            	    <div class="modal-body"> 
+                            	    	您确定要删除所有数据？
+                            	    </div>
+                            	    <div class="modal-footer">
+	                            		<button class="btn btn-info nodel">No</button>
+	                            		<button class="btn btn-warning yesdel">Yes</button>
+                            	    </div>
+                            	</div>
+                            </div>
+                            <!-- over -->
+							<table class="table table-bordered">
+								<colgroup>
+									<col span="1" class="col-xs-1">
+        	                        <col span="1" class="col-xs-2">
+        	                        <col span="1" class="col-xs-2">
+        	                        <col span="1" class="col-xs-5">
+        	                        <col span="1" class="col-xs-2">
+								</colgroup>
+								<tr>
+									<th>编号</th>
+									<th>栏目名称</th>
+									<th>父栏目</th>
+									<th>描述</th>
+									<th>操作</th>
+								</tr>
+								<tr class="cloneTr viewable">
+									<td>
+										<input type="checkbox" name="selection">
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<button class="btn btn-info change" data-target="#changeAddModal" data-toggle="modal">
+											修改
+										</button>
+										<button class="btn btn-danger del">删除</button>
+									</td>
+								</tr>
+							</table>
+							<div class="modal bottom fade" id="changeAddModal">
+								<div class="modal-content">
+	                             	<div class="modal-header">
+	                             		修改栏目信息
+	                             		<span class="close">&times;</span>
+	                             	</div>
+	                             	<div class="modal-body">
+	                             		<p>栏目名称</p>
+	                             		<input type="text">
+	                             		<span></span>
+	                             		<p>父栏目</p>
+	                             		<select name="parentItem">
+	                             			<option value="无">无</option>
+	                             		</select>	
+	                             		<p>描述</p>
+	                             		<input type="text">
+	                             		<span></span>
+	                             	</div>
+	                                <div class="modal-footer">
+	                                	<button class="btn btn-success">确认修改</button>
+	                                	<button class="btn btn-danger">取消</button>
+	                                </div>
+                                </div>
+                             </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

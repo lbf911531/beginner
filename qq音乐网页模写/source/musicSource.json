@@ -1,0 +1,29 @@
+[
+  {
+    "name":"叹云兮",
+    "singer":"鞠婧祎",
+    "album":"叹云兮",
+    "time":"04:43",
+    "linkUrl":"./source/叹云兮/叹云兮.mp3",
+    "linkImg":"./images/2.jpg",
+    "linkLrc":"./source/叹云兮/叹云兮.lrc"
+  },
+  {
+    "name":"山鬼",
+    "singer":"Winky诗",
+    "album":"山鬼",
+    "time":"04:48",
+    "linkUrl":"./source/山鬼/山鬼.mp3",
+    "linkImg":"./images/3.jpg",
+    "linkLrc":"./source/山鬼/山鬼.lrc"
+  },
+  {
+    "name":"牵丝戏",
+    "singer":"银临",
+    "album":"银临",
+    "time":"03:59",
+    "linkUrl":"./source/牵丝戏/牵丝戏.mp3",
+    "linkImg":"./images/4.jpg",
+    "linkLrc":"./source/牵丝戏/牵丝戏.lrc"
+  }
+]

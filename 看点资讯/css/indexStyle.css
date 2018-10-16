@@ -1,0 +1,251 @@
+body,ul,li,p{
+	margin:0;
+	padding:0;
+}
+body{
+	min-width:600px;
+}
+ul li{
+	list-style: none;
+}
+a{
+   color:#fff;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+body{
+	background-color:lightblue;
+}
+div.mainBody{
+	height: 100vh;
+	background-color:#F0F0F0;
+}
+div.mainBody>.row{
+	height: inherit;
+}
+
+/*左侧*/
+div.mainBody>.row .leftNav{
+	height: inherit;
+
+	background-color:#282830;
+	color:#fff; 
+}
+div.leftNav div.logo{
+    height:40px;
+    padding:0 15px;
+    line-height: 40px;
+    background-color:#3D556D;
+}
+div.leftNav div.logo img{
+	width: 40px;
+	height:36px;
+	margin-top:1px;
+	margin-right: 10px;
+}
+div.leftNav div.nav{
+	margin-top:50px;
+	cursor: pointer;
+}
+div.leftNav div.nav div{
+	height: 30px;
+	line-height: 30px;
+	border-bottom:1px solid rgba(51,51,51);
+}
+div.leftNav div.nav div a{
+	display: block;
+	position: relative;
+}
+div.nav div.col-xs-10{
+	position: relative;
+}
+div.nav div.col-xs-10 i{
+	position: absolute;
+	right: 15px;
+}
+
+/*右侧*/
+/*右侧上方信息提示栏*/
+div.topMsg{
+	height: 40px;
+	background-color:#fff; 
+    box-shadow:0px 2px 5px #555652;	
+    position: relative;
+    z-index: 2;
+}
+div.topMsg div{
+	height:40px;
+	line-height: 40px;
+}
+div.topMsg i{
+	font-size: 24px;
+}
+
+div.topMsg div:first-child{
+	position:relative;
+}
+div.topMsg div i:first-child{
+	float: left;
+}
+div.topMsg div i:nth-child(2){
+	float: right;
+	position: relative;
+}
+div.topMsg div i p{
+	font-size: 10px;
+	color:#fff;
+	text-align: center;
+    line-height: 14px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color:#E05140;
+	position: absolute;
+	top:5px;
+	right:-4px;
+}
+
+div.topMsg img{
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+div.topMsg span:after{
+	content: ">";
+	position:relative;
+	left:5px;
+}
+
+
+/*上方隐藏导航栏*/
+.topHideNav{
+	height:40px;
+	background-color:#282830;
+	color:#fff; 
+}
+.topHideNav li{
+	float:left;
+	line-height: 40px;
+	text-align: center;
+}
+.topHideNav li a{
+	display: block;
+	text-decoration: none;
+}
+
+/*右侧下方信息呈现模块*/
+div.rightBody{
+	position: relative;
+}
+div.indexBlock,div.itemBlock,div.consultBlock,div.userBlock{
+	position: absolute;
+	height: 90vh;
+	display: none;
+	overflow-y:scroll;
+}
+div.blockActive{
+	display: block;
+}
+
+
+
+
+/*indexBlock*/
+div.indexBlock .outerUp>div{
+	margin-top:20px;
+}
+.left,.right,.center{
+	height: 240px;
+}
+.left div,.center,.right div{
+	background: #fff;
+}
+.left>div{
+	height: 70px;
+	overflow: hidden;
+}
+.leftCenter{
+	margin:15px 0;
+}
+div.left>div{
+	padding:15px 0 15px 10px;
+	position: relative;
+}
+div.leftImg{
+	height:40px;
+	width:40px;
+	position: absolute;
+	background-color:#66BA10;
+	border-radius: 50%;
+	font-size: 34px;
+	color:#fff;
+	text-align: center;
+	line-height:40px;
+}
+div.rightFont{
+	position: absolute;
+	left:60px;
+}
+div.rightFont p.p1{
+	font-size:20px;
+	height: 20px;
+	color:#333;
+	line-height: 20px;
+}
+div.rightFont p{
+	 line-height: 20px;
+	 font-size:10px; 
+	 color:#999;
+     -webkit-transform-origin-x: 0;
+     transform: scale(0.90);
+     white-space: nowrap;
+     overflow: hidden;
+}
+div.leftCenter .leftImg{
+	background-color: #7C31BF;
+}
+div.leftCenter +div .leftImg{
+	background-color: #38BAEC;
+}
+
+
+.right div{
+	height: 110px;
+}
+.right div:first-child{
+	margin-bottom:20px;
+}
+
+.outDown{
+  padding:20px 30px;
+}
+.outDown>div{
+	height: 400px;
+}
+.DownLeft{
+	padding-right: 20px;
+}
+.DownLeft,.DownRigh{
+}
+.DownLeft{
+	padding-left: 5px;
+}
+.DownRigh{
+	padding-right: 5px;
+}
+.DownRigh div:nth-of-type(1){
+	height:220px;
+}
+.DownRigh div:nth-of-type(2){
+    margin-top:30px;
+	height: 150px;
+}
+
+
+
+
+
+

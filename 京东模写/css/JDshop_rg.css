@@ -1,0 +1,338 @@
+   @charset "utf-8";
+   /*初始化*/
+   *{
+   	  margin:0;
+   	  padding:0;
+   }
+   a{
+   	text-decoration: none;
+   	color:#999;
+   }
+   a:hover{
+   	text-decoration: underline;
+   	color: #E71304;
+   }
+   .rg_box{
+   	width: 1366px;
+   	height:800px;
+   	margin:0 auto;
+   }
+
+   /*顶部*/
+   .rg_head{
+   	 width: 1200px;
+   	 height: 110px;
+   	 margin:0 auto;
+   	 background: white;
+   	 position: relative;
+   	 box-shadow: 0 5px 6px gray;
+   }
+   .rg_head>a{
+   	  display: block;
+   	  width: 160px;
+   	  height: 50px;
+   	  float: left;
+   	  margin-left: 10px;
+   	  margin-top: 30px;
+   	  background: url(../images/rg/icon.png) 0 0;
+
+   }
+   .rg_head>span{
+   	  float: left;
+      height: 34px;
+      line-height: 34px;
+      font-size: 24px;
+      color: #333;
+      margin-top:42px;
+   }
+   .rg_head>p{
+   	  position: absolute;
+   	  bottom:20px;
+   	  right:40px;
+   }
+   .rg_head>p a{
+   	  color:red; 
+   }
+
+   /*中心部分*/
+   .rg_content{
+   	  width: 1210px;
+   	  height: 407px;
+   	  margin:80px auto 0;
+   }
+   .rg_center{
+   	  width: 464px;
+   	  height: 407px;
+   	  margin:0 auto;
+   }
+   .rg_center_top{
+   	  width: 100%;
+   	  height:60px;
+   }
+   .rg_center_top>div{
+   	 float:left; 
+   }
+   .firstSide,.secondSide,.thirdSide{
+   	  width: 72px;
+   	  height:60px; 
+   	  text-align: center;
+   	  position: relative;
+   }
+   .next{
+   	  width: 124px;
+   	  height: 10px;
+   	  margin-top: 25px;
+   	  background: url(../images/rg/icon2.png)0 -100px;
+   }
+   .firstSide span,.secondSide span,.thirdSide span{
+   	   width: 24px;
+   	   height: 24px;
+   	   border-radius: 50%;
+   	   display: block;
+   	   position: absolute;
+   	   top:10px;
+   	   left: 24px;
+   	   font-weight: bold;
+  	   line-height: 24px;
+  	   text-align: center;
+   } 
+  .firstSide span{
+  	color: white;
+  	background: url(../images/rg/icon2.png)0 -200px;
+  }
+  .secondSide span,.thirdSide span{
+  	color:#999;
+  	background: url(../images/rg/icon2.png)-45px -200px;
+  }
+
+
+  .firstSide p,.secondSide p,.thirdSide p{
+  	   font-size: 12px;
+  	   font-weight: bold;
+  	   position: absolute;
+  	   bottom:2px;
+  	   width: 100%;
+  	   height: 21px;
+  	   line-height: 21px;
+  }
+  .firstSide p {
+  	    color: #3b4;
+  }
+
+/*form表单*/
+.rg_center_form{
+	width:100%;
+	height: 246px;
+	margin:30px 0 0 0;
+}
+.phone,.check{
+	width: 100%;
+	height: 50px;
+	border:1px solid #ddd;
+}
+.check{
+	margin:20px 0;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+}
+.check:hover{
+	border:1px solid black;
+	cursor: pointer;
+}
+.phone label{
+	 display: block;
+	 width: 109px;
+	 height: 50px;
+	 float: left;
+	 cursor: pointer;
+	 text-align: center;
+	 line-height: 50px;
+	 border-right: 1px solid #ddd;
+}
+.phone label p{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top:7px;
+	background: url(../images/rg/icon.png)-4px -158px;
+}
+.phone input{
+	 width: 354px;
+	 height: 50px;
+	 float: left;
+	 border:none;
+	 outline: none;
+	 font-size: 30px;
+}
+.phone:hover{
+	border:1px solid black;
+}
+.phone:hover label{
+	border-right: 1px solid black;
+}
+
+.rg_center_form>form>input{
+	 width: 100%;
+	 height: 54px;
+	 background: #E2231A;
+	 color: white;
+	 font-size: 16px;
+	 border:none;
+	 cursor: pointer;
+}
+
+
+.tip{
+	width: 100%;
+	height: 28px;
+	margin-top: 50px;
+}
+.tip a{
+	display: block;
+	font-size: 14px;
+	line-height: 28px;
+	color: black;
+}
+.tip a:hover{
+	color: red;
+}
+.tip a p {
+	display: inline-block;
+	float: left;
+}
+.tip a:first-child{
+	float: left;
+	width: 114px;
+	height: 100%;
+}
+.tip a:first-child p{
+	width: 24px;
+	height: 24px;
+	background: url(../images/rg/icon2.png)0 -161px;
+}
+.tip a:last-child{
+	float: right;
+	width: 104px;
+	height: 100%;
+}
+.tip a:last-child p{
+	width: 25px;
+	height: 25px;
+	background: url(../images/rg/icon2.png)-40px -161px;
+}
+
+
+/*底部*/
+.rg_bottom{
+	width: 1200px;
+	height: 118px;
+	margin:80px auto 0;
+	border-top:2px solid #999;
+}
+.rg_bottom_links{
+	width: 100%;
+	height: 21px;
+	text-align: center;
+	margin: 20px 0;
+  overflow: hidden;
+}
+.linksline{
+	font-size: 12px;
+	line-height: 21px;
+	margin:2px 0;
+}
+
+.rg_bottom_copy{
+	width: 100%;
+	height: 21px;
+	text-align: center;
+}
+
+
+
+
+/*右侧固定栏*/
+.fix{
+	width: 33px;
+	height: 135px;
+	position: fixed;
+	bottom:50%;
+	right: 0;
+  display: block;
+	background: url(../images/rg/icon.png)-367px 0;
+}
+.fix:hover{
+	background: url(../images/rg/icon.png)-334px 0;
+}
+
+
+/*协议盒子*/
+.protocol_box{
+   width: 800px;
+   height: 500px;
+   margin:30px auto 0;
+}
+.protocol{
+  width: 800px;
+  height:500px;
+  position: fixed;
+  top:80px;
+  background:white;
+  box-shadow: 5px 5px 6px gray,-5px -5px 6px gray;
+}
+.pro_head{
+  width: 800px;
+  height: 30px;
+  background: #999;
+  font-size: 14px;
+  font-weight: 700;
+  color:black;
+  line-height: 30px;
+}
+.pro_con{
+   width: 750px;
+   height: 400px;
+   overflow-y: auto;
+   margin:5px auto 0;
+   border:1px solid #999;
+}
+.pro_con p{
+  margin-top:201px;
+}
+
+
+.btn{
+  width: 440px;
+  height: 54px;
+  margin:3px auto 0;
+}
+.btn input{
+  cursor: pointer;
+  border:none;
+  outline: none;
+}
+.btn a{
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
+  background: #999;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  color: #333;
+}
+.btn a:hover{
+  text-decoration: none;
+}
+.btn input{
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  background: #EE2222;
+  float: right;
+}

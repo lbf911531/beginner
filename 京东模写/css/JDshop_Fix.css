@@ -1,0 +1,176 @@
+@charset "utf-8";
+.fix_line{
+	width:6px;
+	height: 660px;
+	background: #7A6E6E;
+	position: fixed;
+	right: 0;
+	top:0;
+}
+.fix_help{
+	width:35px;
+	height: 252px;
+	position: fixed;
+	right:5px;
+	top:45%;
+}
+.fix_help >div{
+    width:34px;
+    height:35px; 
+    background: #7A6E6E;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+.fix_bottom{
+	width:35px;
+    height:35px; 
+    background: #7A6E6E;
+    position: fixed;
+    bottom:1px;
+    right:5px;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.fix_help >div:nth-child(1){
+	background:url(../images/tool1.png) -85px -173px;
+}
+.fix_help >div:nth-child(2){
+	background:url(../images/tool1.png) -48px 0px;
+}
+.fix_help >div:nth-child(3){
+	background:url(../images/tool1.png) -47px -50px;
+}
+.fix_help >div:nth-child(4){
+	background:url(../images/tool1.png) -47px -100px;
+}
+.fix_help> div:nth-child(5){
+	background:url(../images/tool1.png) 9px -143px;
+}
+.fix_help >div:nth-child(6){
+	background:url(../images/tool1.png) -47px -301px;
+}
+
+
+.fix_bottom{
+	background:url(../images/tool1.png) -47px -250px;
+}
+
+.fix_help >div:nth-child(1):hover{
+	background:url(../images/tool2.png) -85px -173px;
+}
+.fix_help >div:nth-child(2):hover{
+	background:url(../images/tool2.png) -48px 0px;
+}
+.fix_help >div:nth-child(3):hover{
+	background:url(../images/tool2.png) -47px -50px;
+}
+.fix_help >div:nth-child(4):hover{
+	background:url(../images/tool2.png) -47px -100px;
+}
+.fix_help >div:nth-child(5):hover{
+	background:url(../images/tool2.png) 9px -143px;
+}
+.fix_help >div:nth-child(6):hover{
+	background:url(../images/tool2.png) -47px -301px;
+}
+
+.fix_bottom:hover{
+	background:url(../images/tool2.png) -47px -250px;
+}
+
+
+/*固定栏滑出框实现*/
+
+.bottom_mas,.vip,.shopcar,.concern,.footmark,.message,.ask{
+	width: 62px;
+	height: 35px;
+	position: relative;
+	background: #c81623;
+	right:60px;
+	display: none;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 5px 0 0 5px;
+}
+.bottom_mas {
+	bottom:0;
+}
+.bottom_mas a,.vip a,.shopcar a,.concern a,.footmark a,.message a,.ask a {
+	color: white;
+}
+
+.fix_help>div:nth-child(1):hover .vip{
+	display: block;
+}
+.fix_help>div:nth-child(2):hover .shopcar{
+	display: block;
+}
+.fix_help>div:nth-child(3):hover .concern{
+	display: block;
+}
+.fix_help>div:nth-child(4):hover .footmark{
+	display: block;
+}
+.fix_help>div:nth-child(5):hover .message{
+	display: block;
+}
+.fix_help>div:nth-child(6):hover .ask{
+	display: block;
+}
+
+.fix_bottom:hover .bottom_mas{
+	display: block;
+}
+
+
+
+/*顶端固定栏*/
+.fix_topBox{
+	width: 1190px;
+	height: 50px;
+	margin:0 auto;
+	display: none;
+}
+.fix_top{
+	width:1190px;
+	height: 50px;
+	position: fixed;
+	z-index: 1000;
+	top:0;
+	background: white;
+	border-left: 1px solid #FF2832;
+	border-right: 1px solid #FF2832;
+	border-bottom: 2px solid #FF2832;
+}
+.fix_top_logo{
+	width: 125px;
+	height: 40px;
+	float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    background: url(../images/logo.png)-195px 0;
+}
+.fix_top_form{
+	width: 540px;
+	height:35px;
+	margin:7.5px auto 0;
+	background: #EFEFEF;
+}
+.fix_top_form form input:first-child{
+	width: 450px;
+	height:35px;
+	float: left;
+	outline:none;
+	border:none;
+	font-size: 24px;
+	background: #EFEFEF;
+}
+div.fix_top_form form div.seach_form_file{
+	 float: left;
+	 margin-left: 10px;
+	 margin-right: 10px;
+}

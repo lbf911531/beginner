@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人注册</title>
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="./css/JDshop_rg.css">
+	<script>
+		window.onload = function rg(){
+			 var returnBtn = document.getElementById('return');
+			 var nextBtn =document.getElementById('gonext');
+			 var box = document.getElementById('probox');
+
+			 gonext.onclick = function next(){
+	              box.style.display = "none";
+			 }
+			 returnBtn.onclick = function returnIndex(){
+			 	  returnBtn.href= "./index.html";
+			 }
+		}
+	</script>
+</head>
+<body>
+	<div class="rg_box">
+		<!-- 顶端 -->
+		<div class="rg_head">
+			<a href="#">
+			</a>
+			<span>欢迎登陆</span>
+			<p>已有账号？
+				<a href="./JDshop_login.html">
+					请登录>
+				</a>
+			</p>
+		</div>
+		<div class="rg_content">
+			<div class="rg_center">
+				 <div class="rg_center_top">
+				 	 <div class="firstSide">
+				 	 	<span>1</span>
+				 	 	<p>验证手机号</p>
+				 	 </div>
+				 	 <div class="next"></div>
+				 	 <div class="secondSide">
+				 	 	<span>2</span>
+				 	 	<p>填写账号信息</p>
+				 	 </div>
+				 	 <div class="next"></div>
+				 	 <div class="thirdSide">
+				 	 	<span>3</span>
+				 	 	<p>注册成功</p>
+				 	 </div>
+				 </div>
+				 <div class="rg_center_form">
+				 	<form action="#">
+				 		<div class="phone">
+				 			<label for="phoneinput">
+				 				中国 0086
+				 				<p></p>
+				 			</label>
+				 			<input type="text" name="phoneno" placeholder="建议使用常用手机号">
+				 		</div>
+                        <div class="check">
+                        	点击按钮进行验证
+                        </div>
+                        <input type="submit" name="next" value="下一步">
+                        <div class="tip">
+                        	<a href="">
+                        		<p></p>
+                        		企业用户注册
+                        	</a>
+                        	<a href="">
+                        		<p></p>
+                        		国际站注册
+                        	</a>
+                        </div>
+				 	</form>
+				 </div>
+			</div>
+		</div>
+		<div class="rg_bottom">
+			<div class="rg_bottom_links">
+				<a href="#">关于我们</a>
+				<span class="linksline">|</span>
+				<a href="#">联系我们</a>
+				<span class="linksline">|</span>
+				<a href="#">人才招聘</a>
+				<span class="linksline">|</span>
+				<a href="#">商家入驻</a>
+				<span class="linksline">|</span>
+				<a href="#">广告服务</a>
+				<span class="linksline">|</span>
+				<a href="#">手机京东</a>
+				<span class="linksline">|</span>
+				<a href="#">友情链接</a>
+				<span class="linksline">|</span>
+				<a href="#">销售联盟</a>
+				<span class="linksline">|</span>
+				<a href="#">京东社区</a>
+				<span class="linksline">|</span>
+				<a href="#">京东公益</a>
+				<span class="linksline">|</span>
+				<a href="#">English Side</a>
+			</div>
+			<div class="rg_bottom_copy">
+				Copyright&copy;2004-2018&nbsp;&nbsp;&nbsp;  京东JD.com &nbsp;&nbsp;&nbsp;版权所有
+			</div>
+		</div>
+
+      <!-- 右侧固定栏 -->
+        <a href="" class="fix">
+	    </a>
+
+      <!-- 协议盒子 -->
+        <div class="protocol_box" id="probox">
+        	<div class="protocol">
+        		<div class="pro_head">
+        			<span>京东用户注册协议和隐私政策</span>
+        		</div>
+        		<div class="pro_con">
+        			<p>京东注册协议：...</p>
+        			<p>详情如下：...</p>
+        		</div>
+        		<div class="btn">
+        			<a href="" id="return">取消</a>
+        			<input type="submit" name="next" id="gonext" value="同意并继续">
+        		</div>
+        	</div>
+        </div>
+	</div>
+</body>
+</html>
