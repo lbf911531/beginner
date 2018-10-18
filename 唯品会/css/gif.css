@@ -1,0 +1,226 @@
+@charset "utf-8";
+.imgIntroduce_left{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+/*初始化,定位*/
+.oneOfImg{
+	position: absolute;
+	top:72px;
+	animation: firstgif 5s infinite alternate;
+}
+.twoOfImg{
+	position: absolute;
+	right: -38px;
+	animation: secondgif 5s infinite alternate;
+}
+.threeOfImg{
+	position: absolute;
+	bottom:-100px;
+	animation: thirdgif 5s infinite alternate;
+}
+.fourOfImg{
+	position: absolute;
+	right: -48px;
+    bottom: 65px;
+    animation: forthgif 5s infinite alternate;
+}
+.sixOfImg{
+	position: absolute;
+	top:50%;
+	z-index: 1;
+	animation:sixthgif 5s infinite linear;
+}
+.sevenOfImg{
+	position: absolute;
+	top:45%;
+	left:-240px;
+	animation:seventhgif 5s infinite linear;
+	animation-delay: 0.4s;
+}
+
+.fiveOfImgBox{
+	position: absolute;
+	width:176px;
+	height:44px;
+	top:50%;
+	left:50%;
+	margin-left: -88px;
+	margin-top: -28px;
+}
+.fiveOfImgBox p{
+	float: left;
+	width: 44px;
+	height: 44px;
+	animation: sport 0.2s infinite alternate;
+}
+.fiveOfImgBox_one{
+	background:url(../images/43.png)0 0 ; 
+}
+.fiveOfImgBox_two{
+    background:url(../images/43.png)-45px 0 ; 
+}
+.fiveOfImgBox_three{
+    background:url(../images/43.png)-89px 0 ; 
+}
+.fiveOfImgBox_four{
+    background:url(../images/43.png)-132px 0 ; 
+}
+
+div.imgIntroduce_left>span{
+	display: block;
+	color: white;
+    font-size: 14px;
+    width: 175px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #f10180;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -87px;
+    top: 55%; 
+}
+div.imgIntroduce_left>span:hover{
+	transform: scale(1.1);
+	transition: all 1s;
+}
+
+
+
+
+/*动画*/
+@keyframes firstgif{
+	0%{
+		top:72px;
+	}
+	20%{
+		top:72px;
+		left:-4px;
+	}
+	40%{
+        top:72px;
+		left:-8px;
+	}
+	60%{
+		top:72px;
+		left:-12px;
+	}
+	80%{
+		top:72px;
+		left:-8px;
+	}
+	100%{
+		top:72px;
+		left:-4px;
+	}
+}
+
+
+@keyframes secondgif{
+	0%{
+		right: -38px;
+	}
+	20%{
+		right: -42px;
+	}
+	40%{
+      right: -47px;
+	}
+	60%{
+		right: -43px;
+	}
+	80%{
+		right: -36px;
+	}
+	100%{
+		right: -33px;
+	}
+}
+
+@keyframes thirdgif{
+	0%{
+		bottom:-100px;
+		left:5px;
+	}
+	20%{
+		bottom:-100px;
+		left:10px;
+	}
+	40%{
+        bottom:-100px;
+		left:15px;
+	}
+	60%{
+		bottom:-100px;
+		left:20px;
+	}
+	80%{
+		bottom:-100px;
+		left:15px;
+	}
+	100%{
+		bottom:-100px;
+		left:6px;
+	}
+}
+
+
+@keyframes forthgif{
+	0%{
+		right: -48px;
+        bottom: 65px;
+	}
+	20%{
+		right: -42px;
+        bottom: 66px;
+	}
+	40%{
+       right: -39px;
+       bottom: 67px;
+	}
+	60%{
+		right: -36px;
+        bottom: 66px;
+	}
+	80%{
+		right: -40px;
+        bottom: 65px;
+	}
+	100%{
+		right: -48px;
+        bottom: 65px;
+	}
+}
+@keyframes sixthgif{
+	0%{
+		top:50%;
+		left:-180px;
+	}
+	100%{
+        top:50%;
+		left:600px;
+	}
+}
+@keyframes seventhgif{
+	0%{
+		top:45%;
+		left:-180px;
+	}
+	100%{
+        top:45%;
+		left:600px;
+	}
+}
+
+
+@keyframes sport{
+	0%{
+       transform: rotate(3deg);
+	}
+	100%{
+       transform: rotate(-3deg);
+	}
+}
